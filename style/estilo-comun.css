@@ -1,0 +1,292 @@
+/* Importo las tipografías */
+
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+/* Con :root creo las variables que voy a usar más a menudo */
+
+:root {
+  --color-github: #0c1117;
+  --color-cuatro: #ff0054;
+  --color-tarjetas-github-gris: #161b22;
+  --color-letra-github-gris: #8b949e;
+  --color-footer-github-gris: #c9d1d9;
+  --color-borde-tarjeta-github: #30363d;
+  --color-letra-secundaria-gris: #56575e;
+}
+
+/* estilo básico del body */
+
+body {
+  font-family: "Nunito", Arial, sans-serif;
+  background: var(--color-github);
+  color: var(--color-footer-github-gris);
+}
+
+/* ESTILO DE LA BARRA DE SCROLL */
+
+body::-webkit-scrollbar {
+  width: .5em;
+  height: .5em;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--color-github);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-footer-github-gris);
+  border-radius: 10px;
+}
+
+/* ==== HEADER ==== */
+
+header {
+  width: 100%;
+  z-index: 100;
+}
+
+#barra-navegacion {
+  max-width: 1280px;
+  padding: 40px;
+  margin: 0 auto;
+  width: 100%;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* ESTILO DEL LOGO */
+
+.logo img {
+  width: 7em;
+}
+
+.logo {
+  padding: 0;
+  list-style: none;
+}
+
+.logo > li > a {
+  text-decoration: none;
+  color: var(--color-footer-github-gris);
+  font-size: clamp(2.5rem, 10vw, 3rem);
+}
+
+.logo > li span {
+  color: var(--color-cuatro);
+}
+
+/* ESTILO DEL MENÚ DE NAVEGACIÓN */
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu > li {
+  list-style: none;
+  padding-left: 30px;
+}
+
+.menu > li > a {
+  text-decoration: none;
+  color: var(--color-footer-github-gris);
+  font-size: 1.2rem;
+  font-weight: 600;
+  -webkit-transition: color .35s;
+  -o-transition: color .35s;
+  transition: color .35s;
+}
+
+.menu > li > a:hover {
+  color: var(--color-cuatro);
+}
+
+/* MENU RESPONSIVE MOVIL */
+  
+/* icono hamburguesa */
+  
+.hamburger {
+  display: none;
+  position: relative;
+  width: clamp(2rem, 5vw, 3rem);
+  height: clamp(2rem, 5vw, 3rem);
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+  
+.hamburger .bar,
+.hamburger::after,
+.hamburger::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin: 6px 0px;
+  background-color: var(--color-footer-github-gris);
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+  border-radius: 6px;
+}
+  
+.hamburger::before {
+  margin-top: 0;
+}
+  
+.hamburger::after {
+  margin-bottom: 0;
+}
+  
+.hamburger .bar {
+  margin: 0;
+}
+  
+/* animación del icono hamburguesa */
+  
+.hamburger.active::before {
+  -webkit-transform: rotateZ(-45deg) translate(-5px, 5px);
+      -ms-transform: rotate(-45deg) translate(-5px, 5px);
+          transform: rotateZ(-45deg) translate(-5px, 5px);
+}
+  
+.hamburger.active .bar {
+  opacity: 0;
+}
+  
+.hamburger.active::after {
+  -webkit-transform: rotateZ(45deg) translate(-9px, -9px);
+      -ms-transform: rotate(45deg) translate(-9px, -9px);
+          transform: rotateZ(45deg) translate(-9px, -9px);
+}
+  
+/* estructura del menú del móvil */
+  
+.mobile_nav > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 100%;
+}
+  
+.contenedor_boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+  
+/* estilo del menú de móvil */
+  
+.mobile_nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-github);
+  z-index: -1;
+  padding-top: 5rem;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+}
+  
+.mobile_nav.active {
+  left: 0;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+}
+  
+.mobile_nav a {
+  display: block;
+  max-width: 200px;
+  padding: 1rem 0;
+  margin: 1rem auto;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: var(--color-tarjetas-github-gris);
+  text-decoration: none;
+  color: var(--color-footer-github-gris);
+}
+
+/* RESPONSIVE */
+
+/* ajuste de la posición de la lista de iconos de redes sociales y de la flecha de scroll automático */
+@media screen and (max-width: 1350px) {
+  .content-wrapper > ul {
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+  }
+
+  .flecha {
+    bottom: 1em;
+    right: .5em;
+  }
+}
+/* cambio de menu de navegación web a mobile */
+@media screen and (max-width: 768px) {
+  body {
+    background-color: var(--color-github);
+  }
+  .menu {
+    display: none;
+  }
+  .mobile_nav,
+  .hamburger {
+    display: block;
+  }
+
+  footer p {
+    text-align: center;
+  }
+}
+/* ajuste del texto del footer y del estilo del menu mobile*/
+@media screen and (max-width: 375px) {
+  
+  footer p {
+    margin: 0;
+    font-size: 10px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .mobile_nav a {
+    padding: .5rem 0;
+  }
+}
+/* ajuste del menú mobile en landscape */
+@media (orientation: landscape) {
+  .mobile_nav a {
+    padding: 0;
+  }
+}

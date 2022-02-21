@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- etiquetas meta -->
+    <meta charset="UTF-8">
+    <!-- SEO -->
+    <meta name="title" content="Alberto Cid | Portfolio">
+    <title>Alberto Cid | Portfolio</title>
+    <meta name="description" content="Personal website/portfolio of Alberto Cid">
+    <link rel="canonical" href="https://www.albertocid.com">
+    <meta name="author" content="Alberto Cid Andrade">
+    <meta name="keywords" content="Portfolio, Alberto, Cid, design, web design, web developer, desarrollador web, frontend, backend, fullstack">
+    <meta name="robots" content="index, follow">
+    <meta name="copyright" content="Alberto Cid Andrade">
+    <meta name="language" content="ES">
+    <meta name="creationdate" content="22/12/2021">
+    <meta name="distribution" content="global">
+    <meta name="rating" content="general">
+    <link rel="icon" type="image/x-icon" href="./img/favicon2.png"> <!-- favicon de la página -->
+    <!-- Compatibilidad responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link a las hojas de estilo css -->
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/estilo-comun.css">
+    <!-- CDN Fontawesome (iconos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- Link a las hojas de js con el atributo defer (el script se descarga de forma asíncrona y no se ejecuta hasta que el HTML está renderizado) -->
+    <script defer src="./script/script.js"></script>
+    <script defer src="./script/comun.js"></script>
+</head>
+<body> 
+    <!-- body -->
+    <div id="loader"> <!-- loader de la web -->
+        <span class="spinner"><span class="spinner2"></span></span>
+    </div>
+    <div id="wrapper"> <!-- contenedor responsive -->
+        <div id="contenedor">
+            <header>
+                <!-- header -->
+                <nav id="barra-navegacion"> <!-- barra de navegación web -->
+                    <ul class="logo">
+                      <li><a href="./">Port<span>folio</span></a></li>
+                    </ul>
+                    <ul class="menu">
+                      <li><a href="./about/">About</a></li>
+                      <li><a href="#skills">Skills</a></li>
+                      <li><a href="#services">Services</a></li>
+                      <li><a href="#work">Work</a></li>
+                      <li><a href="./contact/">Contact</a></li>
+                    </ul>
+                    <button class="hamburger"> <!-- botón hamburguesa del menu mobile -->
+                        <div class="bar"></div>
+                    </button>
+                </nav>
+
+                <nav class="mobile_nav"> <!-- menu mobile -->
+                    <div>
+                      <div class="contenedor_links">
+                        <a class="nav_link" href="./about/">About</a>
+                        <a class="nav_link" href="#skills">Skills</a>
+                        <a class="nav_link" href="#services">Services</a>
+                        <a class="nav_link" href="#work">Work</a>
+                        <a class="nav_link" href="./contact/">Contact</a>
+                      </div>
+                    </div>
+                  </nav>
+
+            </header>
+            <!-- main -->
+            <main>
+                <div class="content-wrapper"> <!-- contenedor responsive -->
+                    <ul class="iconos-contacto"> <!-- barra de iconos de redes sociales  -->
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="far fa-envelope"></i></a></li>
+                        <li><a href="#"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://codepen.io/albcidand" target="_blank" rel="noopener noreferrer"><i class="fab fa-codepen"></i></a></li>
+                    </ul>
+
+                    <!-- SECCIÓN ABOUT -->
+
+                    <section class="about">
+                        <div class="texto">
+                            <div>
+                                <h1>Hi, I'm <span>Alberto</span></h1>
+                                <h2>Web Developer</h2>
+                                <p>Through constant practice & learning, I create aesthetic and minimalistic websites.</p>
+                            </div>
+                            <button><a href="./about/">More About Me</a></button>
+                        </div>
+                        <div class="foto">
+                            <img src="./img/fotoalbertomejorada.webp" alt="Alberto Cid">
+                        </div>
+                    </section>
+
+                    <div class="separador" id="skills"></div>
+
+                    <!-- SECCIÓN SKILLS -->
+
+                    <section class="skills">
+                        <h2>Skills</h2>
+                        <p>A variety of skills that I have learned or that I'm currently learning and that I use in my day to day basis.</p>
+                        <div class="contenedor-skills">
+                            
+                            <div class="tarjeta actual filtro">
+                                <figure>
+                                    <img src="./img/shopify.webp" alt="shopify">
+                                    <figcaption>
+                                        <p>Shopify</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="tarjeta soon">
+                                <figure>
+                                    <img src="./img/sass1.webp" alt="sass">
+                                    <figcaption>
+                                        <p>COMING SOON</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="tarjeta actual">
+                                <figure>
+                                    <img src="./img/photoshop.webp" alt="photoshop">
+                                    <figcaption>
+                                        <p>Photoshop</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="tarjeta actual">
+                                <figure>
+                                    <img src="./img/javascript.webp" alt="javascript">
+                                    <figcaption>
+                                        <p>JavaScript</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        
+                            <div class="tarjeta soon">
+                                <figure>
+                                    <img src="./img/php.webp" alt="php">
+                                    <figcaption>
+                                        <p>COMING SOON</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="tarjeta actual">
+                                <figure>
+                                    <img src="./img/visual-studio-code-2020.webp" alt="visual studio code">
+                                    <figcaption>
+                                        <p>Visual Studio Code</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        
+                            <div class="tarjeta actual">
+                                <figure>
+                                    <img src="./img/html5-logo.webp" alt="html5">
+                                    <figcaption>
+                                        <p>HTML5</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div>
+                                <img src="./img/pcweb.webp" alt="http://www.freepik.com Designed by fullvector / Freepik">
+                            </div>
+
+                            <div class="tarjeta soon">
+                                <figure>
+                                    <img src="./img/git.webp" alt="git">
+                                    <figcaption>
+                                        <p>COMING SOON</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        
+                            <div class="tarjeta actual">
+                                <figure>
+                                    <img src="./img/css3-logo.webp" alt="css3">
+                                    <figcaption>
+                                        <p>CSS3</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="tarjeta actual">
+                                <figure>
+                                    <img src="./img/github.webp" alt="github">
+                                    <figcaption>
+                                        <p>GitHub</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        
+                            <div class="tarjeta actual">
+                                <figure>
+                                    <img src="./img/bootstrap-logo.webp" alt="boostrap">
+                                    <figcaption>
+                                        <p>Boostrap</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="tarjeta soon">
+                                <figure>
+                                    <img src="./img/mysql.webp" alt="mysql">
+                                    <figcaption>
+                                        <p>COMING SOON</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="tarjeta soon">
+                                <figure>
+                                    <img src="./img/nodejs.webp" alt="nodejs">
+                                    <figcaption>
+                                        <p>COMING SOON</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="tarjeta soon">
+                                <figure>
+                                    <img src="./img/npm2.webp" alt="npm">
+                                    <figcaption>
+                                        <p>COMING SOON</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            
+                        </div>
+                    </section>
+                    
+                    <div class="separador" id="services"></div>
+
+                    <!-- SECCIÓN SERVICES -->
+
+                    <section class="services">
+                        <h2>SERVICES</h2>
+                        <p>What will you get by working with me?</p>
+                        <div class="contenedor_services">
+                            <div>
+                                <div>
+                                    <img src="./img/svg/009-coding.svg" alt="" class="svg">
+                                    <h4>Web Development</h4>
+                                    <p>Web development completely tailored to your needs to help you create a <strong>fully personalized website</strong> that you will love.</p>                                
+                                </div>
+                                <div>
+                                    <img src="./img/svg/004-creativity.svg" alt="" class="svg">
+                                    <h4>Design</h4>
+                                    <p>A clean and <strong>elegant web design</strong> is essential to convey quality and attract the attention of your potential customers.</p>
+                                </div>
+                                <div>
+                                    <img src="./img/svg/007-responsive.svg" alt="" class="svg">
+                                    <h4>Fully Responsive</h4>
+                                    <p>Your website will <strong>display properly on any type of device</strong>, including mobile phones, tablets, laptops and desktop computers.</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div>
+                                    <img src="./img/svg/013-web-page.svg" alt="" class="svg">
+                                    <h4>Performance Optimization</h4>
+                                    <p>Your website will be optimized to have the <strong>best loading performance</strong> providing a smooth and satisfying user experience.</p>
+                                </div>
+                                <div>
+                                    <img src="./img/svg/001-soporte-tecnico.svg" alt="" class="svg">
+                                    <h4>Technical Support</h4>
+                                    <p>Technical support, consulting or maintenance on a one-time or monthly contract basis. Anything you need to <strong>keep your website up to date</strong>.</p>
+                                </div>
+                                <div>
+                                    <img src="./img/svg/014-seo.svg" alt="" class="svg">
+                                    <h4>Search Engine Optimization</h4>
+                                    <p>Your website will be optimized with a <strong>smart SEO strategy</strong> to rank in search engines and generate organic leads.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </section>
+
+                    <div class="separador" id="work"></div>
+
+                    <!-- SECCIÓN WORK -->
+
+                    <section class="work">
+                        <h2>WORK</h2>
+                        <p>Here you can find some of the proyects that I have created recently</p>
+                        <div class="contenedorwork">
+                            <div class="proyecto uno">
+                                <h3>OUTER WORLDS</h3>
+                                <div>
+                                    <img src="./img/imagen1.webp" alt="Futuristic Design">
+                                    <button><a href="./work/outer-worlds/" target="_blank" rel="noopener noreferrer">See Futuristic Design</a></button>
+                                </div>
+                            </div>
+                            <div class="proyecto dos">
+                                <h3>LANDSCAPE</h3>
+                                <div>
+                                    <img src="./img/landscape3.webp" alt="Parallax Design">
+                                    <button><a href="./work/landscape/" target="_blank" rel="noopener noreferrer">See Parallax Design</a></button>
+                                </div>
+                            </div>
+                            <div class="proyecto tres">
+                                <h3>ASIMETRIC</h3>
+                                <div>
+                                    <img src="./img/asimetric1.webp" alt="Clean Design">
+                                    <button><a href="./work/asimetric/" target="_blank" rel="noopener noreferrer">See Clean Design</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="separador" id="work"></div>
+                    
+                </div>
+            </main>
+            <footer>
+                <!-- footer -->
+                <ul class="iconos-contacto">
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="far fa-envelope"></i></a></li>
+                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://codepen.io/albcidand" target="_blank" rel="noopener noreferrer"><i class="fab fa-codepen"></i></a></li>
+                </ul>
+                <p>Coded By <span> Alberto Cid </span>| <i class="far fa-copyright"></i> 2022 All rights reserved. </p>
+            </footer>
+        </div>
+        <div class="flecha"><a href="#"><i class="fa fa-angle-up"></i></a></div> <!-- flecha de scroll automático -->
+    </div>
+</body>
+</html>
