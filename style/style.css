@@ -327,6 +327,7 @@ header {
   -o-transition: background-color .35s;
   transition: background-color .35s;
   margin: 20px 154px 0 0;
+  padding: 0 0;
 }
 
 .texto button > a {
@@ -442,18 +443,11 @@ header {
 }
 
 .contenedor-skills {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 9em 25px 9em 25px 9em 25px 9em 25px 9em;
   grid-template-rows: repeat(5, 9em);
-  -ms-grid-columns: 10em 25px 10em 25px 10em 25px 10em 25px 10em 25px 10em 25px 10em;
   grid-template-columns: repeat(7, 10em);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   gap: 25px 25px;
 }
 
