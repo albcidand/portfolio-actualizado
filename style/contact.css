@@ -2,13 +2,11 @@
 
 canvas {
   display: block;
-} 
+}
 
 /* ---- particles.js container ---- */
 
 #particles-js {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
   width: 100%;
@@ -23,147 +21,119 @@ canvas {
 /* --- MAIN --- */
 
 main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Iconos de contacto */
 
-main > ul {
+main>ul {
   padding: 10px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
 }
 
-main > ul > li {
+main>ul>li {
   color: var(--color-footer-github-gris);
   font-size: 25px;
   padding: 15px;
   list-style: none;
 }
 
-main > ul > li > a {
+main>ul>li>a {
   text-decoration: none;
   color: var(--color-footer-github-gris);
-  -webkit-transition: color 0.35s;
-  -o-transition: color 0.35s;
   transition: color 0.35s;
 
 }
 
-main > ul > li a:hover {
+main>ul>li a:hover {
   color: var(--color-cuatro);
 }
 
 /* Animación de los iconos de contacto/redes sociales */
 
 i:hover {
-  -webkit-animation: shake 1.5s infinite;
-          animation: shake 1.5s infinite;
+  animation: shake 1.5s infinite;
 }
 
 @-webkit-keyframes shake {
-  0%{
-      -webkit-transform: rotate(-10deg);
-              transform: rotate(-10deg);
+  0% {
+    transform: rotate(-10deg);
   }
-  8%{
-      -webkit-transform: rotate(10deg);
-              transform: rotate(10deg);
+
+  8% {
+    transform: rotate(10deg);
   }
-  16%{
-      -webkit-transform: rotate(-10deg);
-              transform: rotate(-10deg);
+
+  16% {
+    transform: rotate(-10deg);
   }
-  24%{
-      -webkit-transform: rotate(10deg);
-              transform: rotate(10deg);
+
+  24% {
+    transform: rotate(10deg);
   }
-  32%{
-      -webkit-transform: rotate(-10deg);
-              transform: rotate(-10deg);
+
+  32% {
+    transform: rotate(-10deg);
   }
-  40%{
-      -webkit-transform: rotate(10deg);
-              transform: rotate(10deg);
+
+  40% {
+    transform: rotate(10deg);
   }
-  48%{
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
+
+  48% {
+    transform: rotate(0deg);
   }
-  100%{
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
+
+  100% {
+    transform: rotate(0deg);
   }
 }
 
 @keyframes shake {
-  0%{
-      -webkit-transform: rotate(-10deg);
-              transform: rotate(-10deg);
+  0% {
+    transform: rotate(-10deg);
   }
-  8%{
-      -webkit-transform: rotate(10deg);
-              transform: rotate(10deg);
+
+  8% {
+    transform: rotate(10deg);
   }
-  16%{
-      -webkit-transform: rotate(-10deg);
-              transform: rotate(-10deg);
+
+  16% {
+    transform: rotate(-10deg);
   }
-  24%{
-      -webkit-transform: rotate(10deg);
-              transform: rotate(10deg);
+
+  24% {
+    transform: rotate(10deg);
   }
-  32%{
-      -webkit-transform: rotate(-10deg);
-              transform: rotate(-10deg);
+
+  32% {
+    transform: rotate(-10deg);
   }
-  40%{
-      -webkit-transform: rotate(10deg);
-              transform: rotate(10deg);
+
+  40% {
+    transform: rotate(10deg);
   }
-  48%{
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
+
+  48% {
+    transform: rotate(0deg);
   }
-  100%{
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
+
+  100% {
+    transform: rotate(0deg);
   }
 }
 
 /* --- FORMULARIO --- */
 
 .contenedor-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -171,16 +141,9 @@ i:hover {
 }
 
 .formulario {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   width: 40em;
   background: var(--color-tarjetas-github-gris);
   border-radius: 16px;
@@ -193,34 +156,24 @@ i:hover {
   margin: 0;
   padding: 16px 0 0 0;
   color: var(--color-cuatro);
-  font-size : clamp(1.5rem, 5vw, 2.5rem);
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
 }
 
 p {
-  color:  var(--color-footer-github-gris);
+  color: var(--color-footer-github-gris);
 }
 
 .campos {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 1.5rem 1.5rem 0;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
-.campos > div:nth-child(1) {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.campos>div:nth-child(1) {
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .campos label {
@@ -233,21 +186,15 @@ p {
 
 .inputs {
   padding-bottom: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  align-items: center;
+  box-sizing: border-box;
   width: 100%;
 }
 
-.inputs 
-input, 
+.inputs input,
 textarea {
-  color:  var(--color-footer-github-gris);
+  color: var(--color-footer-github-gris);
   outline: none;
   border: none;
   border-bottom: 1px solid var(--color-borde-tarjeta-github);
@@ -265,17 +212,17 @@ textarea:hover {
 /* --- Quitar los colores no deseados que pone el navegador con la función de autofill --- */
 
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
+input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 textarea:-webkit-autofill,
 textarea:-webkit-autofill:hover,
 textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
-select:-webkit-autofill:focus{
-    -webkit-box-shadow: 0 0 0 30px var(--color-tarjetas-github-gris) inset;
-    -webkit-text-fill-color: var(--color-footer-github-gris);
-    
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 30px var(--color-tarjetas-github-gris) inset;
+  -webkit-text-fill-color: var(--color-footer-github-gris);
+
 }
 
 .inputs::before {
@@ -300,8 +247,6 @@ select:-webkit-autofill:focus{
   color: var(--color-footer-github-gris);
   background-color: transparent;
   border: 1px solid var(--color-footer-github-gris);
-  -webkit-transition: background-color .35s;
-  -o-transition: background-color .35s;
   transition: background-color .35s;
 }
 
@@ -309,26 +254,8 @@ select:-webkit-autofill:focus{
   background-color: var(--color-cuatro);
 }
 
-/* ---FOOTER--- */
-
-footer {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-footer p {
-  font-size: 12px;
-  margin: 12px;
-  padding: 3rem 0;
-}
-
-footer span {
-  color: var(--color-cuatro);
+footer p span {
+  font-weight: 800;
 }
 
 /* --- RESPONSIVE --- */
@@ -337,25 +264,27 @@ footer span {
   body {
     background-color: var(--color-github);
   }
+
   .menu {
     display: none;
   }
+
   .formulario {
     border-radius: 0;
     width: 100vw;
-  }  
-  .campos > div:nth-child(1) {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
+
+  .campos>div:nth-child(1) {
+    flex-direction: column;
+  }
+
   .mobile_nav,
   .hamburger {
     display: block;
   }
+
   footer p {
     padding: 1rem 0;
   }
-  
+
 }
